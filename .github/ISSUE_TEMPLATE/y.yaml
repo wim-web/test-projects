@@ -60,3 +60,22 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+  - type: textarea
+    id: task-lists
+    attributes:
+      label: タスクリスト
+      description: |
+        examples:
+          - [ ] XXXが可能かを調査する
+          - [ ] XXXを---に変更する
+          - [ ] XXXから---を取得する
+      value: |
+        ```[tasklist]
+        ### Frontend Tasks
+        - [ ]
+        ```
+
+        ```[tasklist]
+        ### Backend Tasks
+        - [ ]
+        ```
