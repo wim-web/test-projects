@@ -1,0 +1,30 @@
+name: Epic
+description: Epic用のテンプレート
+title: "[Epic]: "
+labels: ["epic"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: このEpicの説明や背景を記入してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-lists
+    attributes:
+      label: タスクリスト
+      value: |
+        ```[tasklist]
+        ### Tasks
+        - 
+        ```
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: ラベルの確認
+      options:
+        - label: その他に必要なラベルは付与しましたか？
+          required: true
