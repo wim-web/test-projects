@@ -53,6 +53,13 @@ body:
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
+    id: confirm
+    attributes:
+      label: ラベルの確認
+      options:
+        - label: その他に必要なラベルは付与しましたか？
+          required: true
+  - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
